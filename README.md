@@ -15,7 +15,7 @@
 
 - ctdl fetches file links related to a search query from **Google Search**.
 
-- Files can be downloaded parallely using multithreading.
+- Files can be downloaded parallelly using multithreading.
 
 - ctdl is Python 2 as well as Python 3 compatible.
 
@@ -61,7 +61,7 @@ Optional arguments are:
 
 - -d DIRECTORY : specify the directory where files will be stored.
 
-                 Default: A directory with same name as the search query in the current directory.
+                 Default: A directory with the same name as the search query in the current directory.
 
 - -p : for parallel downloading.
 
@@ -79,13 +79,13 @@ Optional arguments are:
 
 ## Examples
 
-- To get list of available filetypes:
+- To get the list of available filetypes:
 
   ```
   $ ctdl -a
   ```
 
-- To get list of potential high threat filetypes:
+- To get the list of potential high threat filetypes:
 
   ```
   $ ctdl -t
@@ -96,7 +96,7 @@ Optional arguments are:
   ```
   $ ctdl python
   ```
-  This is the default behaviour which will download 10 pdf files in a folder named 'python' in current directory.
+  This is the default behavior which will download 10 pdf files in a folder named 'python' in the current directory.
 
 - To download 3 ppt files on 'health':
 
@@ -110,7 +110,7 @@ Optional arguments are:
   $ ctdl -d /home/nikhil/Desktop/ml-pdfs machine-learning
   ```
 
-- To download files parallely:
+- To download files parallelly:
   ```
   $ ctdl -f pdf -p python
   ```
@@ -159,7 +159,7 @@ query = 'machine learning using python')
   ```
 
   **Note:** There seem to be some issues with current version of tqdm. If you do not get
-  expected progress bar behaviour, try this patch:
+  expected progress bar behavior, try this patch:
 
   ```
   $ pip uninstall tqdm
