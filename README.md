@@ -158,14 +158,6 @@ query = 'machine learning using python')
   $ pip install -r requirements.txt
   ```
 
-  **Note:** There seem to be some issues with current version of tqdm. If you do not get
-  expected progress bar behavior, try this patch:
-
-  ```
-  $ pip uninstall tqdm
-  $ pip install git+https://github.com/nikhilkumarsingh/tqdm
-  ```
-
 - In ctdl/ctdl.py, remove the `.` prefix from `.downloader` and `.utils` for
   the following imports, so it changes from:
   ```python
