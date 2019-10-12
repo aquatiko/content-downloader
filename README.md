@@ -15,7 +15,7 @@
 
 - ctdl fetches file links related to a search query from **Google Search**.
 
-- Files can be downloaded parallelly using multithreading.
+- Files can be downloaded in parallel using multithreading.
 
 - ctdl is Python 2 as well as Python 3 compatible.
 
@@ -110,7 +110,7 @@ Optional arguments are:
   $ ctdl -d /home/nikhil/Desktop/ml-pdfs machine-learning
   ```
 
-- To download files parallelly:
+- To download files in parallel:
   ```
   $ ctdl -f pdf -p python
   ```
